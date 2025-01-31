@@ -1,4 +1,5 @@
 # 🌟 **StudySync:Empowering Women Through Education** 🌟
+*https://github.com/missishfish/StudySync*
 
 **StudySync** is a platform designed to address the educational challenges faced by women, particularly in underserved environments. We aim to bridge gaps in **access**, **support**, and **motivation** by creating a space where learning is not just accessible but also empowering! 💪✨
 

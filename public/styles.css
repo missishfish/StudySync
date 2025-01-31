@@ -1,0 +1,199 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: url('assets/images/background.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333333;
+    background-attachment: fixed; /* Keeps the background fixed during scroll */
+    
+}
+
+/* Header */
+.header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(239, 153, 231, 0.8); /* Semi-transparent for visual depth */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .logo img {
+    height: 40px;
+    margin-right: 5px;
+}
+
+.header .logo span {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5em;
+    color: #ffffff;
+    text-shadow: 
+          -1px -1px 0 black, /* Top left */
+           1px -1px 0 black, /* Top right */
+          -1px  1px 0 black, /* Bottom left */
+           1px  1px 0 black; /* Bottom right */
+}
+
+.header nav a {
+    text-decoration: none;
+    color: #f807a4;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.header nav a:hover {
+    color: #b30089;
+}
+
+/* Main Content */
+.main-content {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background to blend with image */
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.main-content h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: #f807a4;
+}
+
+.main-content h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 7em;
+    color: #ffffff;
+    margin: 10px 0;
+    text-shadow: 
+    -2px -2px 0 rgb(255, 0, 204), /* Top left */
+     2px -2px 0 rgb(255,0,204), /* Top right */
+    -2px  2px 0 rgb(255, 0, 204), /* Bottom left */
+     2px  2px 0 rgb(255,0,204); /* Bottom right */
+}
+
+.main-content p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 20px auto;
+    color: #000;
+}
+
+/* Join Room Button */
+#joinRoomBtn {
+    background: linear-gradient(45deg, #f1cff9, #f97de2);
+    color: #fff;
+    padding: 15px 30px; /* Increased padding for a more clickable look */
+    border: none;
+    border-radius: 25px; /* Larger border radius for a softer look */
+    font-size: 1.2em; /* Slightly larger font */
+    cursor: pointer;
+    text-shadow: -1px -1px 0 #000, 
+                 1px -1px 0 #000, 
+                 -1px 1px 0 #000, 
+                 1px 1px 0 #000; /* Black text outline */
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+#joinRoomBtn:hover {
+    background: linear-gradient(45deg, #e17bea, #a80db4);
+    transform: scale(1.1); /* Slightly enlarge the button */
+}
+
+#joinRoomBtn:focus {
+    outline: none;
+}
+
+/* Stats Section */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.stats div {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    padding: 15px;
+    background-color: rgba(218, 42, 253, 0.6);
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* FAQ Section */
+.faq-section {
+    background-color: rgba(255, 255, 255, 0.9); /* Transparent background to blend with the theme */
+    padding: 50px 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 800px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.faq-section h2 {
+    font-family: 'Pacifico', cursive;
+    color: #ff66cc;
+    font-size: 2.5em;
+    text-align: center;
+    text-shadow: -2px -2px 0 #000, 
+                 2px -2px 0 #000, 
+                 -2px 2px 0 #000, 
+                 2px 2px 0 #000;
+    margin-bottom: 20px;
+}
+
+.faq-question {
+    cursor: pointer;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #333;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+.faq-question:hover {
+    color: #d000ff; /* Hover effect */
+}
+
+.faq-answer {
+    margin: 5px 0 15px;
+    padding: 5px 10px;
+    border-left: 2px solid #d000ff;
+    display: none; /* Hide by default */
+    color: #555;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center;    /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    text-align: center;     /* Center text inside */
+    padding: 20px;
+    background-color: #f1f1f1; /* Optional: background color for the footer */
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px; /* Space between links */
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    color: #d000ff; /* Optional: Add a hover effect */
+}

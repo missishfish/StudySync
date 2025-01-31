@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles-2.css">
+</head>
+<body>
+    <div class="register-container">
+        <h2>🎀 Register 💖</h2>
+        <form id="registerForm" enctype="multipart/form-data">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email (use your college email address)</label>
+                <input type="email" id="email" name="email" required placeholder="example@college.edu">
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="input-group">
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender" required class="gender-select">
+                    <option value="">Select Gender</option>
+                    <option value="female">Female</option>
+                    <option value="male">Male</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="id">College/School ID (upload a scanned copy in PDF format if you don't have a college email)</label>
+                <input type="file" id="id" name="id" accept=".pdf" required>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+        <p id="register-error-message" class="error-message"></p>
+    </div>
+
+    <script>
+        document.getElementById('registerForm').addEventListener('submit', (event) => {
+            event.preventDefault(); // Prevent the default form submission
+            // Perform registration validation here (optional)
+            
+            // Redirect to the onboarding page
+            window.location.href = 'onboarding.html'; // Replace with the actual path to the onboarding page
+        });
+    </script>
+    
+    <script src="script2.js"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+/* 
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8d7f5;
+    color: #333;
+    text-align: center;
+    background-image: url('https://placehold.co/1920x1080');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}*/
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: url('../assets/images/background.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    color: #000;
+    text-align: center;
+}
+
+/* Header */
+.header {
+    /* background: linear-gradient(to bottom right, #ffccff, #cc99ff); */
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+/* Logo */
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img {
+    height: 60px;
+    margin-right: 15px;
+}
+
+.header .logo span {
+    font-family: 'Pacifico', cursive;
+    font-size: 2em;
+    color: #fff;
+    text-shadow: -1px -1px 0 #000,  
+                 1px -1px 0 #000,  
+                 -1px 1px 0 #000,  
+                 1px 1px 0 #000; /* Adds black outline */
+}
+/* Remove underline and hover effect from the logo link */
+.header .logo a {
+    text-decoration: none; /* Remove underline */
+    color: inherit;
+    display: flex;
+    align-items: center; /* Inherit color from parent, so it matches other text styles */
+}
+
+/* No hover effect when the logo link is hovered */
+.header .logo a:hover {
+    text-decoration: none; /* Remove underline when hovered */
+    color: inherit; /* No change in color */
+}
+
+.header nav {
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation */
+.header nav a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.header nav a:hover {
+    color: #cc55aa;
+    text-transform: uppercase; /* uppercase letters for effect */
+    letter-spacing: 1.5px;
+}
+
+.header nav a:focus {
+    outline: none; /* to remove the default focus outline on click */
+}
+/*
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar img {
+    height: 50px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #000;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+*/
+/* Content Section Styles */
+.content {
+    padding: 100px 20px;
+}
+
+.content h1 {
+    font-size: 3em;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.content h2 {
+    font-size: 2.5em;
+    color: #d147a3;
+    font-family: 'Pacifico', cursive;
+}
+
+.content p {
+    font-size: 1.2em;
+    color: #333;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.content a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+/* Join Button Styles */
+.join-button {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 20px;
+    background-color: #d147a3;
+    color: #fff;
+    border-radius: 25px;
+    font-size: 1.2em;
+    text-decoration: none;
+    box-shadow: 2px 2px 4px #000;
+}
+
+.join-button:hover {
+    background-color: #b03a8a;
+}

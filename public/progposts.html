@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posts</title>
+    <link rel="stylesheet" href="styles1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* Background Image */
+        body {
+            font-family: Arial, sans-serif;
+            background: url('../assets/background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* Back Button */
+        .back-btn {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 10px 15px;
+            background: #ff6f91; /* Light Pink */
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            background: #c2185b; /* Darker Pink */
+        }
+
+        /* Navigation */
+        .navigate {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #6a0572; /* Dark Violet */
+        }
+
+        .navigate a {
+            color: #ff6f91;
+            text-decoration: none;
+        }
+
+        .navigate a:hover {
+            text-decoration: underline;
+        }
+
+        /* Posts Table */
+        .posts-table {
+            width: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+            background: rgba(249, 241, 255, 0.9); /* Light Violet with slight transparency */
+            padding: 15px;
+        }
+
+        .post-header {
+            display: grid;
+            grid-template-columns: 10% 50% 15% 25%;
+            background: #e0aaff;
+            color: white;
+            padding: 12px;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .post-row {
+            display: grid;
+            grid-template-columns: 10% 50% 15% 25%;
+            align-items: center;
+            padding: 15px;
+            border-bottom: 2px solid #e0aaff;
+            background: white;
+            transition: 0.3s;
+        }
+
+        .post-row:hover {
+            background: #f3d9ff;
+        }
+
+        .post-title {
+            text-align: left;
+        }
+
+        .post-title a {
+            font-size: 18px;
+            font-weight: bold;
+            color: #6a0572;
+            text-decoration: none;
+        }
+
+        .post-title a:hover {
+            text-decoration: underline;
+        }
+
+        .post-author {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .status i {
+            font-size: 22px;
+            color: #ff6f91;
+        }
+
+        /* Pagination */
+        .pagination {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .pagination a {
+            padding: 8px 12px;
+            background-color: #e0aaff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 5px;
+        }
+
+        .pagination a:hover {
+            background-color: #c77dff;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #e0aaff;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Back Button -->
+        <a href="../pages/forums1.html" class="back-btn">⬅ Back to Forums</a>
+
+        <div class="navigate">
+            <a href="../pages/forums1.html">Community Forums</a> >> <a href="">Recent Posts</a>
+        </div>
+
+        <div class="posts-table">
+            <div class="post-header">
+                <div>Status</div>
+                <div>Subjects</div>
+                <div>Replies/Views</div>
+                <div>Last Reply</div>
+            </div>
+
+            <div class="post-row">
+                <div class="status"><i class="fa fa-fire"></i></div>
+                <div class="post-title">
+                    <a href="">Is AI replacing software engineers?</a>
+                    <br>
+                    <span class="post-author">Started by <b><a href="">Sophia_tech</a></b></span>
+                </div>
+                <div>15 replies <br> 1.2K views</div>
+                <div>Jan 30, 2025 <br> By <b><a href="">EmmaCoder</a></b></div>
+            </div>
+
+            <div class="post-row">
+                <div class="status"><i class="fa fa-rocket"></i></div>
+                <div class="post-title">
+                    <a href="">Best way to prepare for coding interviews in 2025?</a>
+                    <br>
+                    <span class="post-author">Started by <b><a href="">Lily_DS</a></b></span>
+                </div>
+                <div>22 replies <br> 2.5K views</div>
+                <div>Jan 29, 2025 <br> By <b><a href="">Ava_Dev</a></b></div>
+            </div>
+
+            <div class="post-row">
+                <div class="status"><i class="fa fa-frown-o"></i></div>
+                <div class="post-title">
+                    <a href="">Are tech layoffs still happening?</a>
+                    <br>
+                    <span class="post-author">Started by <b><a href="">Olivia_Insight</a></b></span>
+                </div>
+                <div>8 replies <br> 890 views</div>
+                <div>Jan 30, 2025 <br> By <b><a href="">Mia_Analysis</a></b></div>
+            </div>
+
+            <div class="post-row">
+                <div class="status"><i class="fa fa-fire"></i></div>
+                <div class="post-title">
+                    <a href="">Will Web3 change the future of the internet?</a>
+                    <br>
+                    <span class="post-author">Started by <b><a href="">Zara_Blockchain</a></b></span>
+                </div>
+                <div>12 replies <br> 1.1K views</div>
+                <div>Jan 30, 2025 <br> By <b><a href="">EmmaCrypto</a></b></div>
+            </div>
+        </div>
+
+        <div class="pagination">
+            pages: <a href="">1</a><a href="">2</a><a href="">3</a>
+        </div>
+    </div>
+
+    <footer>
+        <span>&copy; 2025 | All Rights Reserved</span>
+    </footer>
+
+</body>
+</html>

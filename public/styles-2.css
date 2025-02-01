@@ -13,6 +13,59 @@ body {
     background-repeat: no-repeat; /* Prevents the image from repeating */
 }
 
+/* Existing CSS for Login Page and Banner */
+
+
+/* Ensure header is at the top */
+.header {
+    width: 100%; /* Full width */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(239, 153, 231, 0.8); /* Semi-transparent for visual depth */
+    position: fixed; /* Stick to the top */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img {
+    height: 40px;
+    margin-right: 5px;
+}
+
+.header .logo span {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5em;
+    color: #ffffff;
+    text-shadow: 
+          -1px -1px 0 black, /* Top left */
+           1px -1px 0 black, /* Top right */
+          -1px  1px 0 black, /* Bottom left */
+           1px  1px 0 black; /* Bottom right */
+}
+
+.header nav {
+    display: flex;
+}
+
+.header nav a {
+    text-decoration: none;
+    color: #f807a4;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.header nav a:hover {
+    color: #b30089;
+}
+
 .login-container {
     background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
     padding: 30px; /* Increased padding to make the box bigger */
@@ -20,8 +73,9 @@ body {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
     width: 350px; /* Increased width */
     text-align: center;
-    margin-top: 60px; /* Added margin to prevent overlap with the banner */
+    margin: 60px auto; /* Centered horizontally and prevent overlap with banner */
 }
+
 
 .register-container {
     background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
@@ -30,7 +84,7 @@ body {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
     width: 350px; /* Increased width */
     text-align: center;
-    margin-top: 60px; /* Added margin to prevent overlap with the banner */
+    margin: 60px auto; /* Centered horizontally and prevent overlap with the banner */
 }
 
 h2 {

@@ -13,7 +13,7 @@ body {
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background: url('../assets/images/background.jpeg') no-repeat center center fixed;
+    background: url('../public/assets/images/background.jpeg') no-repeat center center fixed;
     background-size: cover;
     color: #000;
     text-align: center;

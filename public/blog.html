@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudySync Blog</title>
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="../public/assets/images/logo.png" alt="StudySync logo">
+                <span>StudySync</span>
+            </a>
+        </div>
+        <nav>
+            <a href="communities.html"><i class="fas fa-globe"></i> Communities</a>
+            <a href="task_tracker.html"><i class="fas fa-tasks"></i> Task Tracker</a>
+            <a href="pomodoro.html"><i class="fas fa-clock"></i> Timer</a>
+            <a href="#"><i class="fas fa-user"></i> Profile</a>
+            <a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+        </nav>
+    </header>
+
+    <!-- Main Blog Section -->
+    <main>
+        <div class="blog-container">
+            
+            <!-- Blog Heading & Search -->
+            <section class="blog-header">
+                <h2>📖 StudySync Blog</h2>
+                <p>Explore insightful study tips, productivity hacks, and more!</p>
+                <input type="text" id="searchBar" placeholder="🔍 Search blog posts..." onkeyup="searchPosts()">
+            </section>
+
+            <!-- Blog Categories -->
+            <div class="categories">
+                <button class="category-btn" onclick="filterPosts('all')">All</button>
+                <button class="category-btn" onclick="filterPosts('study')">Study Tips</button>
+                <button class="category-btn" onclick="filterPosts('productivity')">Productivity</button>
+                <button class="category-btn" onclick="filterPosts('mindfulness')">Mindfulness</button>
+            </div>
+
+            <!-- Blog Posts -->
+            <div class="blog-posts">
+                
+                <!-- Post 1 -->
+                <div class="post study">
+                    <img src="../public/assets/images/study_tips.webp" alt="Study Tips">
+                    <h3>Top 5 Study Techniques to Boost Memory</h3>
+                    <p>Learn effective study techniques that help retain information better and improve focus...</p>
+                    <a href="#">Read More →</a>
+                </div>
+
+                <!-- Post 2 -->
+                <div class="post productivity">
+                    <img src="../public/assets/images/productivity.jpeg" alt="Productivity">
+                    <h3>How to Stay Productive While Studying</h3>
+                    <p>Discover practical productivity strategies to stay on track and achieve your academic goals...</p>
+                    <a href="#">Read More →</a>
+                </div>
+
+                <!-- Post 3 -->
+                <div class="post mindfulness">
+                    <img src="../public/assets/images/mindfulness.jpeg" alt="Mindfulness">
+                    <h3>Mindfulness for Students: Reduce Stress & Stay Focused</h3>
+                    <p>Explore mindfulness techniques to reduce stress, increase concentration, and improve study habits...</p>
+                    <a href="#">Read More →</a>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <script src="blog.js"></script>
+
+</body>
+</html>

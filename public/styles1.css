@@ -2,24 +2,63 @@
 /*                 Global                      */
 /* ########################################### */
 body {
+    margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('assets/images/bg.jpeg'); /* Add your background image here */
-    background-size: cover; /* Ensures the image covers the entire background */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-}
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    background: url('assets/images/background.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    color: #000;
 }
 
+/* Ensure header is at the top */
+.header {
+    width: 100%; /* Full width */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(239, 153, 231, 0.8); /* Semi-transparent for visual depth */
+    position: fixed; /* Stick to the top */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img {
+    height: 40px;
+    margin-right: 5px;
+}
+
+.header .logo span {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5em;
+    color: #ffffff;
+    text-shadow: 
+          -1px -1px 0 black, /* Top left */
+           1px -1px 0 black, /* Top right */
+          -1px  1px 0 black, /* Bottom left */
+           1px  1px 0 black; /* Bottom right */
+}
+
+.header nav {
+    display: flex;
+}
+
+.header nav a {
+    text-decoration: none;
+    color: #f807a4;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.header nav a:hover {
+    color: #b30089;
+}
 html {
     font-size: 16px;
     font-family: 'Poppins', sans-serif;  /* Modern, clean font */

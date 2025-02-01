@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Tracker | StudySync</title>
+    <link rel="stylesheet" href="task_tracker.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="../public/assets/images/logo.png" alt="StudySync logo">
+                <span>StudySync</span>
+            </a>
+        </div>
+        <nav>
+            <a href="communities.html">Home</a>
+            <a href="room.html">Study Room</a>
+            <a href="pomodoro.html">Timer</a>
+            <a href="#">Profile</a>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <div class="container">
+            
+            <!-- Task Tracker Heading -->
+            <section class="header-section">
+                <h2>📌 My Study Tasks</h2>
+                <p>Stay productive with a well-organized study plan!</p>
+            </section>
+
+            <!-- Add Task Form -->
+            <section class="task-form">
+                <input type="text" id="taskInput" placeholder="Enter task..." />
+                <select id="priority">
+                    <option value="high">🔥 High Priority</option>
+                    <option value="medium">⚡ Medium Priority</option>
+                    <option value="low">💡 Low Priority</option>
+                </select>
+                <input type="date" id="deadline">
+                <button id="addTask">➕ Add Task</button>
+            </section>
+
+            <!-- Task List -->
+            <section class="task-list">
+                <h3>📋 Tasks</h3>
+                <ul id="taskContainer"></ul>
+            </section>
+
+        </div>
+    </main>
+
+    <script src="task_tracker.js"></script>
+
+</body>
+</html>

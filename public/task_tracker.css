@@ -1,0 +1,177 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #FFDDD2, #FFABAB); /* Soft pastel background */
+    text-align: center;
+}
+
+/* Navbar */
+
+.header {
+    /* background: linear-gradient(to bottom right, #ffccff, #cc99ff); */
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+/* Logo */
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img {
+    height: 60px;
+    margin-right: 15px;
+}
+
+.header .logo span {
+    font-family: 'Pacifico', cursive;
+    font-size: 2em;
+    color: #fff;
+    text-shadow: -1px -1px 0 #000,  
+                 1px -1px 0 #000,  
+                 -1px 1px 0 #000,  
+                 1px 1px 0 #000; /* Adds black outline */
+}
+/* Remove underline and hover effect from the logo link */
+.header .logo a {
+    text-decoration: none; /* Remove underline */
+    color: inherit;
+    display: flex;
+    align-items: center; /* Inherit color from parent, so it matches other text styles */
+}
+
+/* No hover effect when the logo link is hovered */
+.header .logo a:hover {
+    text-decoration: none; /* Remove underline when hovered */
+    color: inherit; /* No change in color */
+}
+
+.header nav {
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation */
+.header nav a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.header nav a:hover {
+    color: #cc55aa;
+    text-transform: uppercase; /* uppercase letters for effect */
+    letter-spacing: 1.5px;
+}
+
+.header nav a:focus {
+    outline: none; /* to remove the default focus outline on click */
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Section */
+.header-section h2 {
+    color: #D45079;
+    margin-bottom: 10px;
+}
+
+/* Task Form */
+.task-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.task-form input, .task-form select {
+    padding: 10px;
+    border: 2px solid #D4A5A5;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#addTask {
+    background: #77DD77;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Task List */
+.task-list {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.task-list h3 {
+    color: #6A0572;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #FDE2E4;
+    padding: 10px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.priority-high {
+    border-left: 6px solid #FF6961; /* Red */
+}
+
+.priority-medium {
+    border-left: 6px solid #FFD700; /* Yellow */
+}
+
+.priority-low {
+    border-left: 6px solid #77DD77; /* Green */
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.task-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+}

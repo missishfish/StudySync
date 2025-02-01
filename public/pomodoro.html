@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer | StudySync</title>
+    <link rel="stylesheet" href="pomodoro.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <!-- <header>
+        <h1>StudySync</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Study Room</a>
+            <a href="#">Task Tracker</a>
+            <a href="#">Profile</a>
+        </nav>
+    </header> -->
+
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="../public/assets/images/logo.png" alt="StudySync logo">
+                <span>StudySync</span>
+            </a>
+        </div>
+        <nav>
+            <a href="communities.html">Home</a>
+            <a href="room.html">Study Room</a>
+            <a href="task_tracker.html">Task Tracker</a>
+            <a href="#">Profile</a>
+        </nav>
+    </header>
+
+    <!-- Main Pomodoro Section -->
+    <main>
+        <div class="container">
+            
+            <!-- Pomodoro Timer Heading -->
+            <section class="header-section">
+                <h2>🍅 Pomodoro Timer</h2>
+                <p>Boost your focus and productivity with time-based study sessions!</p>
+            </section>
+
+            <!-- Timer Display -->
+            <section class="timer-section">
+                <div id="timer">25:00</div>
+                <div class="buttons">
+                    <button id="start">▶ Start</button>
+                    <button id="pause">⏸ Pause</button>
+                    <button id="reset">🔄 Reset</button>
+                </div>
+            </section>
+
+            <!-- Session Tracker -->
+            <section class="session-tracker">
+                <h3>✅ Completed Sessions: <span id="sessionCount">0</span></h3>
+            </section>
+
+            <!-- Mode Selection -->
+            <section class="mode-selection">
+                <button class="mode-btn" id="work">🎯 Work (25 min)</button>
+                <button class="mode-btn" id="shortBreak">☕ Short Break (5 min)</button>
+                <button class="mode-btn" id="longBreak">🌙 Long Break (15 min)</button>
+            </section>
+
+        </div>
+    </main>
+
+    <script src="pomodoro.js"></script>
+
+</body>
+</html>

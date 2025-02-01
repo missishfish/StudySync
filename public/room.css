@@ -13,41 +13,69 @@ body {
 
 /* Header */
 .header {
-    padding: 20px;
+    /* background: linear-gradient(to bottom right, #ffccff, #cc99ff); */
+    padding: 20px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(239, 153, 231, 0.8); /* Semi-transparent for visual depth */
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    
+}
+
+/* Logo */
+.header .logo {
+    display: flex;
+    align-items: center;
 }
 
 .header .logo img {
-    height: 40px;
-    margin-right: 5px;
+    height: 60px;
+    margin-right: 15px;
 }
 
 .header .logo span {
     font-family: 'Pacifico', cursive;
-    font-size: 1.5em;
-    color: #ffffff;
-    text-shadow: 
-          -1px -1px 0 black, /* Top left */
-           1px -1px 0 black, /* Top right */
-          -1px  1px 0 black, /* Bottom left */
-           1px  1px 0 black; /* Bottom right */
+    font-size: 2em;
+    color: #fff;
+    text-shadow: -1px -1px 0 #000,  
+                 1px -1px 0 #000,  
+                 -1px 1px 0 #000,  
+                 1px 1px 0 #000; /* Adds black outline */
+}
+/* Remove underline and hover effect from the logo link */
+.header .logo a {
+    text-decoration: none; /* Remove underline */
+    color: inherit;
+    display: flex;
+    align-items: center; /* Inherit color from parent, so it matches other text styles */
 }
 
+/* No hover effect when the logo link is hovered */
+.header .logo a:hover {
+    text-decoration: none; /* Remove underline when hovered */
+    color: inherit; /* No change in color */
+}
+
+.header nav {
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation */
 .header nav a {
+    color: #000;
     text-decoration: none;
-    color: #f807a4;
-    margin: 0 10px;
+    margin: 0 15px;
     font-weight: bold;
 }
 
 .header nav a:hover {
-    color: #b30089;
+    color: #cc55aa;
+    text-transform: uppercase; /* uppercase letters for effect */
+    letter-spacing: 1.5px;
+}
+
+.header nav a:focus {
+    outline: none; /* to remove the default focus outline on click */
 }
 
 /* Paragraph Styling */

@@ -1,21 +1,70 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
     background: url('assets/images/background.jpeg') no-repeat center center fixed;
     background-size: cover;
     color: #000;
 }
 
+/* Ensure header is at the top */
+.header {
+    width: 100%; /* Full width */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(239, 153, 231, 0.8); /* Semi-transparent for visual depth */
+    position: fixed; /* Stick to the top */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img {
+    height: 40px;
+    margin-right: 5px;
+}
+
+.header .logo span {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5em;
+    color: #ffffff;
+    text-shadow: 
+          -1px -1px 0 black, /* Top left */
+           1px -1px 0 black, /* Top right */
+          -1px  1px 0 black, /* Bottom left */
+           1px  1px 0 black; /* Bottom right */
+}
+
+.header nav {
+    display: flex;
+}
+
+.header nav a {
+    text-decoration: none;
+    color: #f807a4;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.header nav a:hover {
+    color: #b30089;
+}
+
+/* Adjust main content to avoid being hidden under the fixed header */
 .container {
     display: flex;
-    gap: 40px; /* Increased space between boxes */
+    flex-wrap: wrap;
+    gap: 40px;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    margin-top: 120px; /* Add space below the fixed header */
 }
 
 .box {
@@ -52,14 +101,56 @@ body {
     color: #ff1493;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('assets/images/background.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+/* Chat Container */
+.chat-container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    margin-top: 100px;
+}
+
+.chat-container h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5em;
+    color: #ff1493;
+    margin-bottom: 10px;
+}
+
+.chat-container p {
+    font-size: 1.2em;
+    color: #444;
+}
+
+/* Forum Button */
 .forum-button {
     display: inline-block;
     margin-top: 20px;
     padding: 15px 25px;
     font-size: 18px;
+    font-family: 'Dancing Script', cursive;
     font-weight: bold;
     color: white;
-    background-color: #CDB4DB; /* New soft purple color */
+    background-color: #CDB4DB;
     border: none;
     border-radius: 8px;
     text-decoration: none;
@@ -67,5 +158,5 @@ body {
 }
 
 .forum-button:hover {
-    background-color: #b89bc4; /* Slightly darker shade on hover */
+    background-color: #b89bc4;
 }

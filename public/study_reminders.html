@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudySync - Study Reminders</title>
+    <link rel="stylesheet" href="study_reminders.css">
+</head>
+<body>
+
+    <a href="home.html" class="go-home-btn">Go Back to Home</a>
+
+    
+    <header>
+        <h1>Study Reminders</h1>
+        <p>Stay organized with reminders for study sessions, deadlines, and breaks.</p>
+    </header>
+
+    <section class="reminder-form">
+        <h2>Create a Reminder</h2>
+        <form action="#" method="POST">
+            <label for="reminder-title">Reminder Title:</label>
+            <input type="text" id="reminder-title" name="title" required placeholder="E.g., Study Math, Deadline for Project">
+
+            <label for="reminder-description">Description:</label>
+            <textarea id="reminder-description" name="description" required placeholder="E.g., Review Chapter 3 notes, Submit assignment"></textarea>
+
+            <label for="reminder-time">Reminder Time:</label>
+            <input type="datetime-local" id="reminder-time" name="time" required>
+
+            <label for="reminder-type">Type of Reminder:</label>
+            <select id="reminder-type" name="type">
+                <option value="study">Study Session</option>
+                <option value="break">Break</option>
+                <option value="deadline">Deadline</option>
+            </select>
+
+            <button type="submit">Set Reminder</button>
+        </form>
+    </section>
+
+    <section class="reminders-list">
+        <h2>Your Upcoming Reminders</h2>
+        <div class="reminder">
+            <p><strong>Reminder:</strong> Study Math</p>
+            <p><strong>Description:</strong> Review Chapter 3 notes</p>
+            <p><strong>Time:</strong> 2025-02-02 14:00</p>
+            <p><strong>Type:</strong> Study Session</p>
+        </div>
+        <!-- More reminders will be displayed here -->
+    </section>
+
+    <footer>
+        <p>Powered by StudySync | Designed to help you stay on track</p>
+    </footer>
+
+    <script src="study_reminders.js"></script>
+</body>
+</html>

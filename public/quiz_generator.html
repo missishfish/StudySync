@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudySync - Quiz Generator</title>
+    <link rel="stylesheet" href="quiz_generator.css">
+</head>
+<body>
+
+    <!-- Back to Home Button -->
+    <button class="back-home" onclick="window.location.href='home.html'">Back to Home</button>
+
+    <div class="quiz-container">
+        <h2>Quiz Generator</h2>
+        <p>Create and take quizzes to test your knowledge.</p>
+
+        <!-- Form to Create a New Quiz Question -->
+        <form id="quiz-form">
+            <input type="text" id="question" placeholder="Enter your question" required>
+            <input type="text" id="option1" placeholder="Option 1" required>
+            <input type="text" id="option2" placeholder="Option 2" required>
+            <input type="text" id="option3" placeholder="Option 3" required>
+            <input type="text" id="option4" placeholder="Option 4" required>
+            <select id="correct-answer">
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+                <option value="4">Option 4</option>
+            </select>
+            <button type="submit">Add Question</button>
+        </form>
+
+        <div class="quiz-list">
+            <h3>Your Quiz:</h3>
+            <div class="questions"></div>
+        </div>
+
+        <button class="start-quiz" onclick="startQuiz()">Start Quiz</button>
+
+        <div class="quiz-section" style="display: none;">
+            <h3 id="quiz-question"></h3>
+            <div id="quiz-options"></div>
+            <button onclick="nextQuestion()">Next</button>
+        </div>
+
+        <div id="quiz-result" style="display: none;">
+            <h3>Quiz Completed!</h3>
+            <p id="score"></p>
+            <button onclick="restartQuiz()">Try Again</button>
+        </div>
+    </div>
+
+    <script src="quiz_generator.js"></script>
+</body>
+</html>

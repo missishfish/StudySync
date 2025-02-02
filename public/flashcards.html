@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudySync - Flashcards</title>
+    <link rel="stylesheet" href="flashcards.css">
+</head>
+<body>
+    <!-- Go Back to Home Button -->
+    <a href="home.html" class="go-home-btn">Go Back to Home</a>
+
+    <!-- Flashcards Section -->
+    <section class="flashcards-section">
+        <h2>Study Flashcards</h2>
+        <p>Create and study flashcards to boost your memory.</p>
+
+        <!-- Flashcards Form -->
+        <form id="flashcardForm">
+            <label for="term">Term:</label>
+            <input type="text" id="term" required>
+
+            <label for="definition">Definition:</label>
+            <textarea id="definition" rows="4" required></textarea>
+
+            <button type="submit">Add Flashcard</button>
+        </form>
+
+        <!-- Flashcards Display -->
+        <div id="flashcardsDisplay" class="flashcards-display">
+            <!-- Flashcards will appear here -->
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Powered by StudySync | Designed for your study success</p>
+    </footer>
+
+    <script src="flashcards.js"></script>
+</body>
+</html>

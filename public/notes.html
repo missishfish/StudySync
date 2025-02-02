@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudySync - Notes Section</title>
+    <link rel="stylesheet" href="notes.css">
+</head>
+<body>
+    
+
+    <!-- Back to Home Button -->
+    <button class="back-home" onclick="window.location.href='home.html'">Back to Home</button>
+
+    <!-- Notes Section -->
+    <div class="notes-container">
+        <h2>Notes Section</h2>
+        <p>Write and organize your study notes.</p>
+
+        <!-- Form to Add Notes -->
+        <form id="note-form">
+            <input type="text" id="note-title" placeholder="Note Title" required>
+            <textarea id="note-content" placeholder="Write your notes here..." required></textarea>
+            <button type="submit">Add Note</button>
+        </form>
+
+        <div class="notes-list">
+            <h3>Your Notes:</h3>
+            <div class="notes"></div>
+        </div>
+    </div>
+
+    <script src="notes.js"></script>
+</body>
+</html>

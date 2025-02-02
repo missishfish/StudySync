@@ -1,0 +1,136 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Go Back to Home Button */
+.go-home-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 16px;
+    background-color: #ff7f7f;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.go-home-btn:hover {
+    background-color: #ff4c4c;
+}
+
+/* Flashcards Section */
+.flashcards-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.flashcards-section h2 {
+    font-size: 36px;
+    color: #6c5ce7;
+}
+
+.flashcards-section p {
+    font-size: 18px;
+    color: #888;
+    margin-top: 10px;
+}
+
+/* Flashcards Form */
+form {
+    margin-top: 30px;
+    text-align: left;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333;
+    display: block;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #6c5ce7;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #4e37c2;
+}
+
+/* Flashcards Display */
+.flashcards-display {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.flashcard {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    width: 250px;
+    margin: 0 auto;
+}
+
+.flashcard:hover {
+    transform: scale(1.05);
+}
+
+.flashcard h3 {
+    font-size: 20px;
+    color: #6c5ce7;
+}
+
+.flashcard p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f7f7f7;
+    color: #888;
+    margin-top: 30px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

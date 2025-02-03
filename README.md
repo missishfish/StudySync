@@ -1,5 +1,5 @@
 # 🌟 **StudySync:Empowering Women Through Education** 🌟
-**https://studysync-qu5m.onrender.com**
+**https://studysync-l4x7.onrender.com**
 
 **StudySync** is a platform designed to address the educational challenges faced by women, particularly in underserved environments. We aim to bridge gaps in **access**, **support**, and **motivation** by creating a space where learning is not just accessible but also empowering! 💪✨
 
@@ -32,5 +32,5 @@ To make education more inclusive, collaborative, and goal-driven by providing re
 ## 🌈 **Join Us in Making a Difference!**  
 
 Let’s break barriers and unlock potential through education. Together, we can empower women to thrive in their educational journeys. 🌟💼  
-**https://studysync-qu5m.onrender.com**
+**https://studysync-l4x7.onrender.com**
 

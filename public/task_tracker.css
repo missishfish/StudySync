@@ -1,11 +1,16 @@
 /* General Styling */
 body {
-    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #FFDDD2, #FFABAB); /* Soft pastel background */
+    font-family: 'Roboto', sans-serif;
+    background: url('assets/images/bg.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    color: #000;
     text-align: center;
 }
+
 
 /* Navbar */
 
